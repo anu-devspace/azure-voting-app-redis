@@ -1,7 +1,7 @@
 trigger:
   branches:
     include:
-      - main
+      - azure-pipelines-new
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -28,6 +28,6 @@ stages:
             command: buildAndPush
             repository: $(imageName)
             dockerfile: $(dockerfilePath)
-            containerRegistry: '<your-acr-service-connection>'
+            containerRegistry: 'crlbgvoteapptestuksa'
             tags: |
               $(Build.BuildId)
