@@ -20,7 +20,7 @@ stages:
           displayName: 'Login to ACR'
           inputs:
             command: login
-            containerRegistry: '<your-acr-service-connection>'  # <-- update this
+            containerRegistry: 'crlbgvoteapptestuksa'  # <-- update this
 
         - task: Docker@2
           displayName: 'Build and Push Image'
